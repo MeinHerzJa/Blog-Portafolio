@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Serif:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Roboto mono', monospace;
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+.home-main{
+    min-width: 320px;
+    height: calc(100% - 140px);
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    background-image: url("../assets/img/fondo-600px.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+a{
+    text-decoration: none;
+    display: inline;
+    color: black;
+}
+header{
+    width: 100%;
+    min-width: 320px;
+    height: 140px;
+    display: grid;
+    grid-template-rows:1fr 1fr;
+}
+header .header-icon-container{
+    width: 100%;
+    height: 50px;
+    display: grid;
+    background-color: #478dcf;
+}
+header .header-icon-container .icons{
+    margin-right: 50px;
+    width: 300px;
+    height: auto;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+    justify-content: space-between;
+    justify-self: end;
+}
+header .icons span{
+    color: antiquewhite;
+}
+nav{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90px;
+    border-bottom: 1px solid gray;
+    background-color: #0e2e2f;
+}
+.nav-logo-container{
+    display: flex;
+    align-items: center;
+    height: 90px;
+    margin-left: 5px;
+    color: white;
+}
+.nav-logo-container a{
+    background-color: antiquewhite;
+    border-radius: 100px;
+    margin-right: 5px;
+}
+nav .profile-link{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 50px;
+    font-size: 1.4rem;
+    font-style: oblique;
+    font-weight: bold;
+}
+.nav-logo-container img{
+    height: 80px;
+    width: auto;
+}
+.profile-link a{
+    color: white;
+    border-bottom: 1px solid wheat;
+}
+.info{
+    font-family: 'Roboto mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.info h1{
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.info--name{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+.info--description{
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 400;
+    font-style: oblique;
+}
+.call-to-action{
+    display: flex;
+    justify-content: center;
+}
+.home-main-button{
+    width: 110px;
+    height: 40px;
+    padding: 10px 10px;
+    background-color: transparent;
+    color: white;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+.home-main-button:hover{
+    background-color: #f7dab9;
+    color: #000;
+    border: 1px solid black;
+    transform: scale(1.1);
+}
